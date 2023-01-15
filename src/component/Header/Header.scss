@@ -1,0 +1,8 @@
+header {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+
+    :last-child {
+        text-align: center;
+    }
+}
