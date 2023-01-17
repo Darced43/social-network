@@ -1,4 +1,3 @@
-import './ModalPortal.scss'
 import { createPortal } from "react-dom"
 import FormEnter from '../FormEnter/FormEnter';
 
