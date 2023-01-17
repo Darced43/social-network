@@ -9,8 +9,8 @@ const FormEnter = ({setShowModal}) => {
                 <Button variant="contained" onClick={() => setShowModal(false)}>закрыть</Button>
             </div>
             <form action="">
-                <TextField className='formEnter__login' id="login" label="Логин" variant="outlined" />
-                <TextField className='formEnter__pasword' id="pasword" label="Пароль" variant="outlined" />
+                <input className='formEnter__login' type="text" />
+                <input className='formEnter__password' type="text" />
                 <Button variant="contained" type='submit'>войти</Button>
             </form>
         </div>

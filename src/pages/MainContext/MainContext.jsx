@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
-import Content from '../Content/Content'
-import Preloader from '../Preloader/Preloader'
+import Content from '../../component/Content/Content'
+import Preloader from '../../component/Preloader/Preloader'
 
 const MainContext = () => {
 

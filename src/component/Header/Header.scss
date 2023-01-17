@@ -1,8 +1,13 @@
 header {
     display: grid;
-    grid-template-columns: 9fr 3fr;
+    grid-template-columns: 3fr 3fr 3fr;
+    margin-bottom: 10px;
+
+    :nth-child(2) {
+        text-align: center;
+    }
 
     :last-child {
-        text-align: center;
+        text-align: end;
     }
 }
