@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
+import './App.css'
 import MainContext from './pages/MainContext/MainContext'
 import Layout from './pages/Layout/Layout'
 import LoginPage from './pages/LoginPage/LoginPage'
@@ -6,6 +7,7 @@ import { AuthProvider } from './hooks/AuthProvider'
 import Network from './pages/Network/Network'
 import RequierAuth from './hooks/RequierAuth'
 import FirstPage from './pages/FirstPage/FirstPage'
+import Stars from './pages/Stars/Stars'
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
             </RequierAuth>
           }/>
           <Route path='/login' element={<LoginPage/>}/>
+          <Route path='/stars' element={<Stars/>}/>
         </Route>
       </Routes>
     </AuthProvider>

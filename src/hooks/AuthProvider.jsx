@@ -11,7 +11,10 @@ export const AuthProvider = ({children}) => {
     }
 
     const signout = (cb) => {
-        setUsers(null)
+        setUsers({
+            login : null,
+            pasword: null
+        })
         cb()
     }
 

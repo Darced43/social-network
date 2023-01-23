@@ -1,35 +1,23 @@
 import { useState, useEffect } from "react"
 import axios from "axios"
 import './FirstPage.scss'
-import { authAccaynt } from "../../hooks/authAccaynt"
+import { useAuthAccount } from "../../hooks/useAuthAccount"
+import Container from '@mui/material/Container';
 
 const FirstPage = () => {
-    const {usersAll} = authAccaynt()
-    // const [ users, setUsers ] = useState([])
-
-    // async function ServerUsers (){
-    //     try{
-    //         const response = await axios.get('https://jsonplaceholder.typicode.com/users')
-    //         setUsers(response.data)
-    //         console.log(response.data)
-    //     }
-    //     catch{
-    //         console.log('всё плохо')
-    //     }
-    // }
-
-    // useEffect(() => {ServerUsers()}, [])
+    const usersAll = useAuthAccount()
 
     return(
-        <div className="FirstPage">  
-            приветик!
-            {usersAll.map( user => 
-                <div key={user.phone} className="FirstPage__log">
-                    login:<p>{user.name}</p>
-                    password:<p>{user.username}</p>
-                </div>
-            )}
-        </div>
+        <Container maxWidth="xl" sx={{mt:1}}>
+            <div className="FirstPage">  
+                {usersAll.map( user => 
+                    <div key={user.phone} className="FirstPage__log">
+                        login:<p>{user.name}</p>
+                        password:<p>{user.username}</p>
+                    </div>
+                )}
+            </div>
+        </Container>
     )
 }
 
