@@ -1,0 +1,12 @@
+.LoginPage__block {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.form__login {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}

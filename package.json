@@ -11,12 +11,17 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
-    "@mui/material": "^5.11.4",
+    "@fontsource/roboto": "^4.5.8",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.5",
     "axios": "^1.2.2",
     "node-sass": "^8.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.6.2"
+    "react-particles": "^2.8.0",
+    "react-router-dom": "^6.6.2",
+    "tsparticles-engine": "^2.8.0",
+    "tsparticles-preset-stars": "^2.8.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",
